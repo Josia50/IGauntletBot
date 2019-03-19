@@ -8,10 +8,10 @@ client.on('ready', () => {
     console.log('Welcome/Leave Message enabled!')
 })
 
-/*client.on("guildMemberAdd", (member) =>  {
-  member.guild.channels.find("id", config.channelwelcome).send(`${member.user}, Welcome to this server!`); 
+client.on("guildMemberAdd", (member) =>  {
+  member.guild.channels.find("id", config.channelwelcome).send(`${member.user}, Welcome to the IGauntlet server!`); 
   console.log(`${member.user} Joined`);
-});*/
+});
 
   client.on("guildMemberRemove", (member) => {
     const membertag = member.user.tag
