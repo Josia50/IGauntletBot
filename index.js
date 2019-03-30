@@ -21,6 +21,11 @@ client.on("ready", () => {
     const welcome = require("./src/welcome.js");
     const role = require("./src/roleadd.js");
     const help = require("./src/help.js");
+    const Music = require('./musicmain.js')
+
+Music.start(client, {
+  youtubeKey: config.youtubeapi
+})
 })
 
 client.login(run.token);
